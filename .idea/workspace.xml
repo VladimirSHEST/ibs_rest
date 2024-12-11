@@ -5,32 +5,156 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1dc6f22-2c8b-44cc-9312-a47561cb3c4f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ibs/AddProductExist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ibs/AddProductExist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ibs/ProductData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ibs/ProductData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ibs/RestTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/VladimirSHEST/ibs_rest.git",
+    "accountId": "76939b37-2249-4600-b774-8efa69ca9ed3"
+  }
 }]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2pzEnXLG2E9UxFqA55Rtqb5mGdV" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.AddProductExist.addProductTypeExistFruit.executor": "Run",
+    "JUnit.AddProductExist.executor": "Run",
+    "JUnit.AddProductExist.test3.executor": "Run",
+    "JUnit.RestTest.addProductTypeVegetable.executor": "Run",
+    "JUnit.RestTest.addProductTypeVegetable2.executor": "Run",
+    "JUnit.RestTest.executor": "Run",
+    "JUnit.RestTest.test.executor": "Run",
+    "JUnit.RestTest.test2.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true"
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Vladimir/IdeaProjects/Oleh_Pendrak",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
+  <component name="RunManager" selected="JUnit.AddProductExist.addProductTypeExistFruit">
+    <configuration name="AddProductExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ibs_rest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ibs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ibs" />
+      <option name="MAIN_CLASS_NAME" value="com.ibs.AddProductExist" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddProductExist.addProductTypeExistFruit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ibs_rest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ibs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ibs" />
+      <option name="MAIN_CLASS_NAME" value="com.ibs.AddProductExist" />
+      <option name="METHOD_NAME" value="addProductTypeExistFruit" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddProductExist.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ibs_rest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ibs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ibs" />
+      <option name="MAIN_CLASS_NAME" value="com.ibs.AddProductExist" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ibs_rest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ibs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ibs" />
+      <option name="MAIN_CLASS_NAME" value="com.ibs.RestTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestTest.addProductTypeVegetable2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ibs_rest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ibs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ibs" />
+      <option name="MAIN_CLASS_NAME" value="com.ibs.RestTest" />
+      <option name="METHOD_NAME" value="addProductTypeVegetable2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AddProductExist.addProductTypeExistFruit" />
+        <item itemvalue="JUnit.AddProductExist.test3" />
+        <item itemvalue="JUnit.AddProductExist" />
+        <item itemvalue="JUnit.RestTest.addProductTypeVegetable2" />
+        <item itemvalue="JUnit.RestTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
