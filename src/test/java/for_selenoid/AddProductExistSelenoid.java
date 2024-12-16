@@ -1,20 +1,22 @@
-package com.ibs;
+package for_selenoid;
 
+import com.ibs.ProductData;
 import io.restassured.http.ContentType;
 import io.restassured.http.Cookies;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
 import java.util.List;
 import java.util.stream.Collectors;
+
 import static io.restassured.RestAssured.given;
 
-public class AddProductExist {
+public class AddProductExistSelenoid {
     private final String URL = "http://localhost:8080/api/food";
 
     @Test
     void addProductTypeExistFruit() {
-
-        // проверка, что фрукт яблоко уже есть
+        // Проверка, что фрукт "Яблоко" уже существует
         List<ProductData> productsDefault = given()
                 .log().all()
                 .when()
@@ -23,16 +25,23 @@ public class AddProductExist {
                 .then().log().all()
                 .extract().body().jsonPath()
                 .getList("", ProductData.class);
-        String nameProductsDefault = productsDefault.stream().map(x -> x.getName()).filter(x -> x.contains("Яблоко"))
-                .collect(Collectors.toList()).toString();
+
+        String nameProductsDefault = productsDefault.stream()
+                .map(ProductData::getName)
+                .filter(name -> name.contains("Яблоко"))
+                .collect(Collectors.toList())
+                .toString();
         System.out.println(nameProductsDefault);
 
-                // Проверяем, что Яблоко есть
-        int count_1 = (int) productsDefault.stream().map(x ->x.getName()).filter(x -> x.contains("Яблоко")).count();
+        // Проверяем, что "Яблоко" существует
+        int count_1 = (int) productsDefault.stream()
+                .map(ProductData::getName)
+                .filter(name -> name.contains("Яблоко"))
+                .count();
         System.out.println(count_1);
-        Assertions.assertEquals(1, count_1, "кол-во яблок не равно 1");
-        // добавили ещё одно Яблоко
+        Assertions.assertEquals(1, count_1, "Количество яблок не равно 1");
 
+        // Добавляем ещё одно "Яблоко"
         String data = "{\"name\": \"Яблоко\", \"type\": \"FRUIT\", \"exotic\":false}";
 
         Cookies cookies = given()
@@ -44,8 +53,9 @@ public class AddProductExist {
                 .then()
                 .log().all()
                 .statusCode(200)
-                .extract().detailedCookies(); // Извлекаем все куки;
+                .extract().detailedCookies(); // Извлекаем все куки
 
+        // Проверяем, что количество "Яблоко" увеличилось
         List<ProductData> productsApple2 = given()
                 .log().all()
                 .cookies(cookies)
@@ -56,11 +66,14 @@ public class AddProductExist {
                 .extract().body().jsonPath()
                 .getList("", ProductData.class);
 
-        int count = (int) productsApple2.stream().map(x ->x.getName()).filter(x -> x.contains("Яблоко")).count();
+        int count = (int) productsApple2.stream()
+                .map(ProductData::getName)
+                .filter(name -> name.contains("Яблоко"))
+                .count();
         System.out.println(count);
-        Assertions.assertEquals(2, count, "кол-во яблок не равно 2");
+        Assertions.assertEquals(2, count, "Количество яблок не равно 2");
 
-        // сброс до дефолтных настроек
+        // Сброс до дефолтных настроек
         given()
                 .log().all()
                 .cookies(cookies)
@@ -70,7 +83,7 @@ public class AddProductExist {
                 .then()
                 .log().all();
 
-        // проверка, что фрукт яблоко удалили
+        // Проверка, что фрукт "Яблоко" удален
         List<ProductData> deleteProduct = given()
                 .log().all()
                 .cookies(cookies)
@@ -81,11 +94,12 @@ public class AddProductExist {
                 .extract().body().jsonPath()
                 .getList("", ProductData.class);
 
-        // Проверяем, что количество яблок уменьшилось
-        int countAfterDelete = (int) deleteProduct.stream().map(x -> x.getName()).filter(x -> x.contains("Яблоко")).count();
+        // Проверяем, что количество "Яблоко" уменьшилось
+        int countAfterDelete = (int) deleteProduct.stream()
+                .map(ProductData::getName)
+                .filter(name -> name.contains("Яблоко"))
+                .count();
         System.out.println(countAfterDelete);
-        Assertions.assertEquals(1, countAfterDelete, "кол-во яблок не равно 1 после удаления");
-
+        Assertions.assertEquals(1, countAfterDelete, "Количество яблок не равно 1 после удаления");
     }
-
 }
