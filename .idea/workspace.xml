@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1dc6f22-2c8b-44cc-9312-a47561cb3c4f" name="Changes" comment="добавление продукта уже существующего">
-      <change afterPath="$PROJECT_DIR$/src/test/java/for_selenoid/AddProductExistSelenoid.java" afterDir="false" />
+    <list default="true" id="b1dc6f22-2c8b-44cc-9312-a47561cb3c4f" name="Changes" comment="добавление тест для jenkins">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ibs/AddProductExist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ibs/AddProductExist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/for_selenoid/AddProductExistSelenoid.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +57,8 @@
     "JUnit.RestTest.executor": "Run",
     "JUnit.RestTest.test.executor": "Run",
     "JUnit.RestTest.test2.executor": "Run",
+    "Maven.ibs_rest [clean].executor": "Run",
+    "Maven.ibs_rest [test].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
@@ -70,7 +71,7 @@
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.AddProductExistSelenoid">
+  <component name="RunManager" selected="JUnit.AddProductExist">
     <configuration name="AddProductExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ibs_rest" />
       <extension name="coverage">
@@ -151,8 +152,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AddProductExistSelenoid" />
         <item itemvalue="JUnit.AddProductExist" />
+        <item itemvalue="JUnit.AddProductExistSelenoid" />
         <item itemvalue="JUnit.AddProductExist.addProductTypeExistFruit" />
         <item itemvalue="JUnit.AddProductExist.test3" />
         <item itemvalue="JUnit.RestTest.addProductTypeVegetable2" />
@@ -176,11 +177,20 @@
       <option name="project" value="LOCAL" />
       <updated>1733930797313</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="добавление тест для jenkins">
+      <option name="closed" value="true" />
+      <created>1734378343943</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1734378343943</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="добавление продукта уже существующего" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавление продукта уже существующего" />
+    <MESSAGE value="добавление тест для jenkins" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавление тест для jenkins" />
   </component>
 </project>
